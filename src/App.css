@@ -36,3 +36,65 @@
     transform: rotate(360deg);
   }
 }
+
+.btn-with-count-wrapper {
+  display: flex;
+  margin: 0 10px 0 0;
+  font-size: 12px;
+  color: #24292e;
+  height: 25px;
+  vertical-align: middle;
+}
+.btn-with-count {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #24292e;
+  background-color: #eff3f6;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+  position: relative;
+  padding: 4px 12px 0 24px;
+  font-weight: 600;
+  background-repeat: repeat-x;
+  background-position: -1px -1px;
+  background-size: 110% 110%;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 0.25em;
+}
+.btn-with-count svg {
+  position: absolute;
+  left: 7px;
+}
+.social-count {
+  vertical-align: middle;
+  padding: 4px 10px;
+  font-weight: 600;
+  color: #24292e;
+  background-color: #fff;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-left: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-left: -2px;
+}
+div > hr {
+  border: 1px solid #efefef;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-block: none;
+  margin-inline: none;
+}
+div > h1 {
+  padding: 0 10px 10px 10px;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  border-bottom: 1px solid #efefef;
+}
+.inputDate,
+.inputDate input {
+  font-size: 14px;
+}
+input.inputDate, .inputDate > input {
+  padding: 5px;
+}

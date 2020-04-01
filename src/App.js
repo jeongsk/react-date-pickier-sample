@@ -1,24 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import "./App.css";
+
+import AirbnbReactDates from "./AirbnbReactDates";
+import GpblReactDayPicker from "./GpblReactDayPicker";
+import Hacker0x01ReactDatepicker from "./Hacker0x01ReactDatepicker";
+import Y0cReactDatepicker from "./Y0cReactDatepicker";
+
+const Card = ({ children }) => {
+  return (
+    <div
+      style={{
+        border: "1px solid #bfbfbf",
+        margin: 10,
+        padding: 10,
+        borderRadius: 10
+      }}
+    >
+      {children}
+    </div>
+  );
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Card>
+        <AirbnbReactDates />
+      </Card>
+      <Card>
+        <Hacker0x01ReactDatepicker />
+      </Card>
+      <Card>
+        <GpblReactDayPicker />
+      </Card>
+      <Card>
+        <Y0cReactDatepicker />
+      </Card>
+
+      <div style={{ height: 500 }} />
     </div>
   );
 }

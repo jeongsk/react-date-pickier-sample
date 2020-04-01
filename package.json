@@ -1,12 +1,21 @@
 {
-  "name": "react-date-picker",
+  "name": "react-date-picker-sample",
   "version": "0.1.0",
+  "homepage": "https://jeongsk.github.io/react-date-pickier-sample",
+  "repository": "git+https://github.com/jeongsk/react-date-pickier-sample.git",
+  "author": "jeongsk <jeongseok@wantedlab.com>",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@y0c/react-datepicker": "^1.0.3",
+    "node-sass": "^4.13.1",
     "react": "^16.13.1",
+    "react-datepicker": "^2.14.1",
+    "react-dates": "^21.8.0",
+    "react-day-picker": "^7.4.0",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
@@ -14,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "yarn build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
